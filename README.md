@@ -1,4 +1,4 @@
-# ANarchyX Miner - Private Wallet Keys Guesser
+# AnarchyX Miner - Private Wallet Keys Guesser
 AnarchyX is not free, our algorithm is also the fastest ever seen in a wallet miner. 
 
 ## Not Free
